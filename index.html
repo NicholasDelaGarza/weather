@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!--Header navbar-->
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand mb-0 h1">
+            <h1 id="title">Weather Dashboard</h1>
+        </span>
+    </nav>
+<!--Main page content-->
+    <main>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4" id="search-section">
+                <form class="form-inline" id="search-bar">
+                    <div class="header" id="title">Search for a City: </div>
+                    <input class="form-control mr-sm-2" id="city-search"type="search" placeholder="City, State" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit" id="searchBtn">
+                        <i class="fas fa-search-location fa-lg"></i>
+                    </button>
+                  </form>
+                  <div id="list-of-cities">
+                  </div>
+              </div>
+              <div class="col-lg-8 col-md-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 id="featured-city"></h2>
+                                <div id="city-info"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12" id="forecast">
+                      <h3>5-Day Forecast: </h3>
+                    <div class="card-deck" id="forecast-cards"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/java/script.js"></script>
+</body>
+</html>
